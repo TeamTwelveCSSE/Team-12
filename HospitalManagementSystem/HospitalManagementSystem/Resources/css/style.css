@@ -1277,6 +1277,7 @@ ul.pagenation li a:hover{
 	}
 	.logo {
 		margin-top: 1em;
+        margin-left: 0;
 	}
 	.top-nav ul li a {
 		width: 100%;

@@ -605,7 +605,7 @@ i.glyphicon.glyphicon-search {
   top: 3px;
 }
 .logo{
-padding: 32px 0 0 32px;
+padding: 32px 0 0 0;
 }
 .logo a{
 font-family: 'FjallaOne-Regular';
