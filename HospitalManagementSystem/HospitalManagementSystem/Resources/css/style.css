@@ -16,9 +16,9 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-input [type="text"],input [type="submit"],input [type="button"],textarea{
+/*input [type="text"],input [type="submit"],input [type="button"],textarea{
 	-webkit-appearance:none;
-}
+}*/
 /*-- header --*/
 .header{
 	padding: 1em 0;
@@ -31,6 +31,9 @@ input [type="text"],input [type="submit"],input [type="button"],textarea{
     background-repeat:repeat-x;
     background-size: 27px 100%;
 }
+.top-buffer {
+        margin-top: 15px;
+    }
 span.menu{
 	display:none;
 }

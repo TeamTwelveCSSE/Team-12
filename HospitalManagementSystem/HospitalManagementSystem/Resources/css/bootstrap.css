@@ -129,9 +129,21 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-    width: 112px;
-    height: 29px;
-    background-color: #6699FF;
+    width: auto !important;
+    background-color: #96C03A;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    padding: 6px 30px 5px 10px;
+    text-transform: uppercase;
+    overflow: visible;
+    font-family: "franklin-gothic-urw-cond-n7","franklin-gothic-urw-cond","Arial",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px !important;
+    border-radius: 0 !important;
 }
 button[disabled],
 html input[disabled] {
@@ -291,7 +303,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #1B242F;
+  color: #004080;
   text-decoration: none;
 }
 a:hover,
@@ -309,6 +321,10 @@ figure {
 }
 img {
   /*vertical-align: middle;*/
+}
+h3{
+    color: #23527c;
+    font-weight: bold;
 }
 .img-responsive,
 .thumbnail > img,
@@ -355,13 +371,11 @@ hr {
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
 .h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6 {
