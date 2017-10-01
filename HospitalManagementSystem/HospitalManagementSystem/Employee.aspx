@@ -12,12 +12,26 @@
     <link href="Resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Resources/scripts/validation.js" type="text/javascript"></script>
+    <script src="Resources/scripts/DatePicker.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
     <!-- Custom Theme files -->
 	<link href="Resources/css/style.css" rel='stylesheet' type='text/css' />
    	<!-- Custom Theme files -->	
    	<!-- webfonts -->
    	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
    	<!-- webfonts -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $("#txtDOB").datepicker();
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- container -->
@@ -60,7 +74,7 @@
                                         <div class="col-md-6">
                                             <div class="col-md-4">Employee Type</div>
                                             <div class="col-md-8">
-                                                <asp:DropDownList ID="lstEmpType" runat="server" class="form-control" AutoPostBack="false" Visible="True">
+                                                <asp:DropDownList ID="lstEmpType" runat="server" class="form-control" AutoPostBack="false" Visible="True" onChange="VisibleTextBox()">
                                                     <asp:ListItem></asp:ListItem>
                                                     <asp:ListItem>Attendant</asp:ListItem>
                                                     <asp:ListItem>Lab Assistance</asp:ListItem>
@@ -72,6 +86,7 @@
                                             </div> 
                                         </div>
                                         <div class="col-md-3">
+                                            <div id="txtOther" style="display:none"><asp:TextBox ID="txtTitle" runat="server" class="form-control" Visible="true"></asp:TextBox></div> 
                                         </div>
                                     </div>
 
@@ -80,7 +95,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Employee ID</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtEmpIDRegister" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtEmpIDRegister" runat="server" class="form-control" ReadOnly="true"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -115,7 +130,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Address</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtAddress" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtAddress" runat="server" class="form-control" TextMode="MultiLine"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -126,7 +141,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">NIC</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtNIC" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtNIC" runat="server" class="form-control" MaxLength="10"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -137,7 +152,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Date Of Birth</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" ClientIDMode="Static"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -148,7 +163,20 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Gender</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtGender" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8">
+                                                <asp:DropDownList ID="lstGender" runat="server" class="form-control">
+                                                    <asp:ListItem>Male</asp:ListItem>
+                                                    <asp:ListItem>Female</asp:ListItem>
+                                                </asp:DropDownList></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
                                         </div>
                                         <div class="col-md-3">
                                         </div>
