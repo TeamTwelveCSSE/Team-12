@@ -10,7 +10,7 @@
 namespace HospitalManagementSystem {
     
     
-    public partial class stock {
+    public partial class Issue {
         
         /// <summary>
         /// main control.

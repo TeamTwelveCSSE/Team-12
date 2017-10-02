@@ -10,7 +10,7 @@
 namespace HospitalManagementSystem {
     
     
-    public partial class stock {
+    public partial class Order {
         
         /// <summary>
         /// main control.

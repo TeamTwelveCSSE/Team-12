@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="stock.aspx.cs" Inherits="HospitalManagementSystem.stock" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddItem.aspx.cs" Inherits="HospitalManagementSystem.AddItem" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Stock</title>
+    <title>Add Item</title>
 
     <link href="Resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
@@ -46,8 +46,8 @@
                     </div>
                 </div>
             </main>
-        </form>     
-        <h1>This is stock page</h1>   
+        </form>    
+        <h1>This is Add Item page</h1>     
 
         <!-- footer -->
         <div style="height: 642px; width: 759px; margin-right: 540px">
@@ -58,3 +58,4 @@
 
 </body>
 </html>
+

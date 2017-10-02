@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="stock.aspx.cs" Inherits="HospitalManagementSystem.stock" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Issue.aspx.cs" Inherits="HospitalManagementSystem.Issue" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Stock</title>
+    <title>Issue</title>
 
     <link href="Resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
@@ -38,16 +38,16 @@
                 <div class="container">
                     <div class="row">
                          <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="AddItem.aspx">Add Item</a></li>
+                            <li><a data-toggle="tab" href="AddItem.aspx">Add Item</a></li>
                             <li><a data-toggle="tab" href="AddSupplier.aspx">Add Supplier</a></li>
-                            <li><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
+                            <li  class="active"><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
                             <li><a data-toggle="tab" href="Order.aspx">Order</a></li>
                         </ul>
                     </div>
                 </div>
             </main>
-        </form>     
-        <h1>This is stock page</h1>   
+        </form>  
+        <h1>This is Issue page</h1>       
 
         <!-- footer -->
         <div style="height: 642px; width: 759px; margin-right: 540px">
@@ -58,3 +58,4 @@
 
 </body>
 </html>
+
