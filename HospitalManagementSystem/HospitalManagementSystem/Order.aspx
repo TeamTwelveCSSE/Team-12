@@ -41,13 +41,76 @@
                             <li><a data-toggle="tab" href="AddItem.aspx">Add Item</a></li>
                             <li><a data-toggle="tab" href="AddSupplier.aspx">Add Supplier</a></li>
                             <li><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
-                            <li  class="active"><a data-toggle="tab" href="Order.aspx">Order</a></li>
+                            <li  class="active" id="#Order"><a data-toggle="tab" href="Order.aspx">Order</a></li>
                         </ul>
+                        <div class="tab-content">
+                            <div id="Order" class="tab-pane fade in active">
+                                <h3>Order</h3>
+                                <div class="container">
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Item Id</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtItemOrderId" runat="server" class="form-control" ReadOnly="true" ></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Supplier Id</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtSupplierOrderId" runat="server" class="form-control" ></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Order Name</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtOrderName" runat="server" class="form-control" ></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Quantity Ordered</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtQtyOrder" runat="server" class="form-control" TextMode="Number"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Ordered Date</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtOrderDate" runat="server" class="form-control" TextMode="Date"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>
-        </form>        
-        <h1>This is Order page</h1> 
+        </form>
 
         <!-- footer -->
         <div style="height: 642px; width: 759px; margin-right: 540px">

@@ -43,18 +43,19 @@
                             <li><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
                             <li><a data-toggle="tab" href="Order.aspx">Order</a></li>
                         </ul>
+
                     </div>
                 </div>
             </main>
-        </form>     
         <h1>This is stock page</h1>   
 
         <!-- footer -->
         <div style="height: 642px; width: 759px; margin-right: 540px">
             <div class="footer">
-
             </div>
         </div>
 
+        </form>     
+        
 </body>
 </html>

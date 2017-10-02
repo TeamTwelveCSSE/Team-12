@@ -43,11 +43,74 @@
                             <li  class="active"><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
                             <li><a data-toggle="tab" href="Order.aspx">Order</a></li>
                         </ul>
+                        <div class="tab-content">
+                            <div id="Order" class="tab-pane fade in active">
+                                <h3>Issue Item</h3>
+                                <div class="container">
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Item Id</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtItemIssueId" runat="server" class="form-control" ReadOnly="true" ></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Quantity Issued</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtQtyIssue" runat="server" class="form-control" TextMode="Number"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Location</div>
+                                            <div class="col-md-8">
+                                                <asp:DropDownList ID="location" runat="server" class="form-control" AutoPostBack="false" Visible="True">
+                                                    <asp:ListItem>Add Location</asp:ListItem>
+                                                    <asp:ListItem>Ward_01</asp:ListItem>
+                                                    <asp:ListItem>Ward_02</asp:ListItem>
+                                                    <asp:ListItem>Ward_03</asp:ListItem>
+                                                    <asp:ListItem>Ward_04</asp:ListItem>
+                                                    <asp:ListItem>Ward_05</asp:ListItem>
+                                                    <asp:ListItem>Lab</asp:ListItem>
+                                                    <asp:ListItem>Theatre</asp:ListItem>
+                                                </asp:DropDownList>
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Issue Date</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtIssueDate" runat="server" class="form-control" TextMode="Date"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>
-        </form>  
-        <h1>This is Issue page</h1>       
+        </form>     
 
         <!-- footer -->
         <div style="height: 642px; width: 759px; margin-right: 540px">
