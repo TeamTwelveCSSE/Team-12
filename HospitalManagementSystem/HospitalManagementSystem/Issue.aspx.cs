@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HospitalManagementSystem
 {
-    public partial class neo : System.Web.UI.Page
+    public partial class Issue : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

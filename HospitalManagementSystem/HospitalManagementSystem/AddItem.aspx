@@ -1,16 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Account.aspx.cs" Inherits="HospitalManagementSystem.Account" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddItem.aspx.cs" Inherits="HospitalManagementSystem.AddItem" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Account Management</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Add Item</title>
+
     <link href="Resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom Theme files -->
 	<link href="Resources/css/style.css" rel='stylesheet' type='text/css' />
    	<!-- Custom Theme files -->	
@@ -37,30 +33,32 @@
             </div>
         </div>
         <!-- /header -->
-
         <form id="main" runat="server" method="post">
             <main id="content">
                 <div class="container">
                     <div class="row">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#Expenses">Add Expenses</a></li>
-                            <li><a data-toggle="tab" href="#Salary">Employee Salary</a></li>
-                            <li><a data-toggle="tab" href="#Attendance">Employee Attendance</a></li>
-                            <li><a data-toggle="tab" href="#Absence">Employee Absence</a></li>
+                         <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="AddItem.aspx" id="#AddItem">Add Item</a></li>
+                            <li><a data-toggle="tab" href="AddSupplier.aspx">Add Supplier</a></li>
+                            <li><a data-toggle="tab" href="Issue.aspx">Isuue</a></li>
+                            <li><a data-toggle="tab" href="Order.aspx">Order</a></li>
                         </ul>
-
                         <div class="tab-content">
-                            <div id="Expenses" class="tab-pane fade in active">
-                                <h3>Add Expenses</h3>
+                            <div id="AddItem" class="tab-pane fade in active">
+                                <h3>Add Items</h3>
                                 <div class="container">
-
                                     <div class="row">
                                         <div class="col-md-3">
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="col-md-4">Expense ID</div>
+                                            <div class="col-md-4">Category</div>
                                             <div class="col-md-8">
-                                                <asp:TextBox ID="tb_expenseid" runat="server" class="form-control" Enabled="false"></asp:TextBox>
+                                                <asp:DropDownList ID="category" runat="server" class="form-control" AutoPostBack="false" Visible="True">
+                                                    <asp:ListItem></asp:ListItem>
+                                                    <asp:ListItem>Equipment</asp:ListItem>
+                                                    <asp:ListItem>Other Materials</asp:ListItem>
+                                                    <asp:ListItem>Medicine</asp:ListItem>
+                                                </asp:DropDownList>
                                             </div> 
                                         </div>
                                         <div class="col-md-3">
@@ -71,52 +69,8 @@
                                         <div class="col-md-3">
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="col-md-4">Date</div>
-                                            <div class="col-md-8"><asp:TextBox ID="tb_expensedate" runat="server" class="form-control" Enabled="false" ></asp:TextBox></div>
-                                        </div>
-                                        <div class="col-md-3">
-                                           <asp:Button ID="btn_date" runat="server" Text="Submission Date" OnClick="btn_date_Click" /> 
-                                        </div>
-                                    </div>
-
-                                    <div class="row top-buffer">
-                                        <div class="col-md-3">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="col-md-4"></div>
-                                            <div class="col-md-6">
-                                                <asp:Calendar ID="Calendar1" OnSelectionChanged="Calendar1_SelectionChanged" runat="server" Height="187px" Visible="false" Width="208px"> </asp:Calendar>
-                                            </div>
-                                        </div>
-                                    <div/>
-
-                                    <div class="row top-buffer">
-                                    </div>
-
-                                    <div class="row top-buffer">
-                                        <div class="col-md-3">
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="col-md-4">&nbsp;&nbsp;&nbsp;Expense Type</div>
-                                            <div class="col-md-8">
-                                                <asp:DropDownList ID="list_expensetype" runat="server" class="form-control" AutoPostBack="false" Visible="True">
-                                                    <asp:ListItem>Select Expense Type</asp:ListItem>
-                                                    <asp:ListItem>Salary Payments</asp:ListItem>
-                                                    <asp:ListItem>Maintenance</asp:ListItem>
-                                                    <asp:ListItem>Utility Payments</asp:ListItem>
-                                                    <asp:ListItem>Other</asp:ListItem>
-                                                </asp:DropDownList>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row top-buffer">
-                                        <div class="col-md-3">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="col-md-4">&nbsp;&nbsp;&nbsp;Description</div>
-                                            <div class="col-md-8"><asp:TextBox ID="tb_expensedescription"  runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-4">Item Code</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtItemCode" runat="server" class="form-control" ></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -126,63 +80,86 @@
                                         <div class="col-md-3">
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="col-md-4">&nbsp;&nbsp;&nbsp;Amount</div>
-                                            <div class="col-md-8"><asp:TextBox ID="tb_expenseamount" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-4">Item Name</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtItemName" runat="server" class="form-control" ></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
                                     </div>
-
 
                                     <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
                                         <div class="col-md-6">
+                                            <div class="col-md-4">Quantity</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtQty" runat="server" class="form-control" TextMode="Number"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
-                                            <div class="col-md-6">
-                                                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click"/>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <asp:Button ID="btnCancel" runat="server" Text="Clear" OnClick="btnCancel_Click" />                                                
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div id="Salary" class="tab-pane fade">
-                                <h3>Employee Salary</h3>
-                                <div class="container">
-                     
-                                </div>
-                            </div>
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Re Order Level</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtReOrder" runat="server" class="form-control" TextMode="Number" ></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+                                    <br />
 
-                            <div id="Attendance" class="tab-pane fade">
-                                <h3>Employee Attendance</h3>
-                                <div class="container">
-                                    
-                                </div>
-                            </div>
-
-                            <div id="Absence" class="tab-pane fade">
-                                <h3>Employee Absence</h3>
-                                <div class="container">
                                     <div class="row">
                                         <div class="col-md-3">
                                         </div>
-                                        
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Rack No</div>
+                                            <div class="col-md-8">
+                                                <asp:DropDownList ID="RackNo" runat="server" class="form-control" AutoPostBack="false" Visible="True">
+                                                    <asp:ListItem></asp:ListItem>
+                                                    <asp:ListItem>Rack 01</asp:ListItem>
+                                                    <asp:ListItem>Rack 02</asp:ListItem>
+                                                    <asp:ListItem>Rack 03</asp:ListItem>
+                                                    <asp:ListItem>Rack 04</asp:ListItem>
+                                                    <asp:ListItem>Rack 05</asp:ListItem>
+                                                </asp:DropDownList>
+                                            </div> 
+                                        </div>
                                         <div class="col-md-3">
                                         </div>
-                                     </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Description</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtDescriptionItem" runat="server" class="form-control" TextMode="MultiLine"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">Date</div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtdate" runat="server" class="form-control" TextMode="Date"></asp:TextBox></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>
-                    </div>
+                      </div>
+                 </div>
             </main>
-                
-        </form>
+        </form>    
+             
 
     <asp:GridView ID="gridview1" runat="server" DataSourceID="datasource1" AutoGenerateColumns="false" AutoGenerateDeleteButton="true" AutoGenerateEditButton="true">
         <Columns>
@@ -208,5 +185,7 @@
 
             </div>
         </div>
+
 </body>
 </html>
+

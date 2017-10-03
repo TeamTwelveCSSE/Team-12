@@ -10,7 +10,7 @@
 namespace HospitalManagementSystem {
     
     
-    public partial class Account {
+    public partial class AddItem {
         
         /// <summary>
         /// main control.
@@ -22,75 +22,76 @@ namespace HospitalManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlForm main;
         
         /// <summary>
-        /// tb_expenseid control.
+        /// category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_expenseid;
+        protected global::System.Web.UI.WebControls.DropDownList category;
         
         /// <summary>
-        /// tb_expensedate control.
+        /// txtItemCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_expensedate;
+        protected global::System.Web.UI.WebControls.TextBox txtItemCode;
         
         /// <summary>
-        /// btn_date control.
+        /// txtItemName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_date;
+        protected global::System.Web.UI.WebControls.TextBox txtItemName;
         
         /// <summary>
-        /// Calendar1 control.
+        /// txtQty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox txtQty;
         
         /// <summary>
-        /// list_expensetype control.
+        /// txtReOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList list_expensetype;
+        protected global::System.Web.UI.WebControls.TextBox txtReOrder;
         
         /// <summary>
-        /// tb_expensedescription control.
+        /// RackNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_expensedescription;
+        protected global::System.Web.UI.WebControls.DropDownList RackNo;
         
         /// <summary>
-        /// tb_expenseamount control.
+        /// txtDescriptionItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_expenseamount;
+        protected global::System.Web.UI.WebControls.TextBox txtDescriptionItem;
         
         /// <summary>
-        /// btnSubmit control.
+        /// txtdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD:HospitalManagementSystem/HospitalManagementSystem/Account.aspx.designer.cs
         protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
@@ -119,5 +120,8 @@ namespace HospitalManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource datasource1;
+=======
+        protected global::System.Web.UI.WebControls.TextBox txtdate;
+>>>>>>> eacb1da9f800cbef9117134ea5ea46bc13baeb42:HospitalManagementSystem/HospitalManagementSystem/AddItem.aspx.designer.cs
     }
 }
