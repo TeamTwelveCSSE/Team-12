@@ -244,6 +244,41 @@
                                         <div class="col-md-3">
                                         </div>
                                         <div class="col-md-6">
+                                            View Employee Details
+                                            <a data-toggle="collapse" data-target="#emp_details"><img src="Resources/images/downarrow.png"/></a>
+                                            <div id="emp_details" class="collapse">
+                                                <asp:GridView ID="GridEmp" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"><AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
+
+                                                    <EditRowStyle BackColor="#999999"></EditRowStyle>
+
+                                                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></FooterStyle>
+
+                                                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+                                                    <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+
+                                                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+
+                                                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+
+                                                    <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+
+                                                    <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+
+                                                    <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+
+                                                    <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
+                                                </asp:GridView>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
                                         </div>
                                         <div class="col-md-3">
                                         </div>

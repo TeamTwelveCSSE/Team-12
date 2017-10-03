@@ -7,9 +7,9 @@ namespace HospitalManagementSystem
 {
     public class EmployeeObj
     {
-        private string empId;
+        private int empId;
 
-        public string EmpId
+        public int EmpId
         {
             get { return empId; }
             set { empId = value; }
@@ -63,9 +63,9 @@ namespace HospitalManagementSystem
             set { nic = value; }
         }
 
-        private string dob;
+        private DateTime dob;
 
-        public string DOB
+        public DateTime DOB
         {
             get { return dob; }
             set { dob = value; }
@@ -95,9 +95,9 @@ namespace HospitalManagementSystem
             set { contact = value; }
         }
 
-        private string salary;
+        private float salary;
 
-        public string Basic_Salary
+        public float Basic_Salary
         {
             get { return salary; }
             set { salary = value; }

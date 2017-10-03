@@ -34,14 +34,30 @@ namespace HospitalManagementSystem.App_Code
             }
         }
 
+        public MySqlConnection GetOpenConnection()
+        {
+            try
+            {
+                conn = new MySqlConnection(conString);
+                conn.Open();
+
+                return conn;
+            }
+
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
         public void CloseConnection()
         {
             conn.Close();  
         }
 
-        public void CreateCommand()
+        public MySqlCommand CreateCommand()
         {
-            conn.CreateCommand();
+            return conn.CreateCommand();
         }
     }
 }

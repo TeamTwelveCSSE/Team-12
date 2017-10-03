@@ -100,6 +100,7 @@
     <Content Include="Resources\images\d1.jpg" />
     <Content Include="Resources\images\d2.jpg" />
     <Content Include="Resources\images\d3.jpg" />
+    <Content Include="Resources\images\downarrow.png" />
     <Content Include="Resources\images\em.png" />
     <Content Include="Resources\images\glyphicons-halflings-white.png" />
     <Content Include="Resources\images\glyphicons-halflings.png" />
@@ -116,6 +117,7 @@
     <Content Include="Resources\images\pic2.jpg" />
     <Content Include="Resources\images\pic3.jpg" />
     <Content Include="Resources\images\picLab.png" />
+    <Content Include="Resources\images\rightarrow.png" />
     <Content Include="Resources\images\search-icon.png" />
     <Content Include="Resources\images\search.png" />
     <Content Include="Resources\images\sign-ban.png" />
@@ -139,7 +141,6 @@
     <Content Include="Resources\scripts\bootstrap.js" />
     <Content Include="Resources\scripts\bootstrap.min.js" />
     <Content Include="Resources\scripts\DatePicker.js" />
-
     <Content Include="Resources\scripts\validation.js" />
     <Content Include="stock.aspx" />
     <Content Include="stock.aspx" />
