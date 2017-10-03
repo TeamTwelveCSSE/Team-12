@@ -31,6 +31,15 @@ namespace HospitalManagementSystem {
         protected global::System.Web.UI.WebControls.DropDownList lstEmpType;
         
         /// <summary>
+        /// txtTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTitle;
+        
+        /// <summary>
         /// txtEmpIDRegister control.
         /// </summary>
         /// <remarks>
@@ -85,13 +94,22 @@ namespace HospitalManagementSystem {
         protected global::System.Web.UI.WebControls.TextBox txtDOB;
         
         /// <summary>
-        /// txtGender control.
+        /// radioBtnMale control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGender;
+        protected global::System.Web.UI.WebControls.RadioButton radioBtnMale;
+        
+        /// <summary>
+        /// radioBtnFemale control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radioBtnFemale;
         
         /// <summary>
         /// txtMail control.
