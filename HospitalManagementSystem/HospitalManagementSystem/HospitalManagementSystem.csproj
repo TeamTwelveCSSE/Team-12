@@ -143,8 +143,6 @@
     <Content Include="Resources\scripts\DatePicker.js" />
     <Content Include="Resources\scripts\validation.js" />
     <Content Include="stock.aspx" />
-    <Content Include="stock.aspx" />
-    <Content Include="stock.aspx" />
     <Content Include="Template.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

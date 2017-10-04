@@ -91,7 +91,7 @@ namespace HospitalManagementSystem {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-<<<<<<< HEAD:HospitalManagementSystem/HospitalManagementSystem/Account.aspx.designer.cs
+//<<<<<<< HEAD:HospitalManagementSystem/HospitalManagementSystem/Account.aspx.designer.cs
         protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
@@ -120,8 +120,8 @@ namespace HospitalManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource datasource1;
-=======
+//=======
         protected global::System.Web.UI.WebControls.TextBox txtdate;
->>>>>>> eacb1da9f800cbef9117134ea5ea46bc13baeb42:HospitalManagementSystem/HospitalManagementSystem/AddItem.aspx.designer.cs
+//>>>>>>> eacb1da9f800cbef9117134ea5ea46bc13baeb42:HospitalManagementSystem/HospitalManagementSystem/AddItem.aspx.designer.cs
     }
 }
